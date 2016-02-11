@@ -9,7 +9,13 @@ var log = bunyan.createLogger({
 
 var PORT = 8585;
 
+//UI source: https://www.airpair.com/angularjs/building-angularjs-app-tutorial
+
 app.use(express.static(__dirname));
+
+app.get('/index.html', function(req, res) {
+	res.redirect('/');
+});
 
 app.get('/flash', function(req, res) {
 	log.info('REQUEST: /flash');

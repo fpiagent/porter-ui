@@ -19,10 +19,10 @@ app.config([ '$routeProvider', function($routeProvider) {
 		controller : "PageCtrl"
 	})
 	// Pages
-	.when("/about", {
-		templateUrl : "partials/about.html",
-		controller : "PageCtrl"
-	})
+//	.when("/about", {
+//		templateUrl : "partials/about.html",
+//		controller : "PageCtrl"
+//	})
 //	.when("/faq", {
 //		templateUrl : "partials/faq.html",
 //		controller : "PageCtrl"
